@@ -34,7 +34,7 @@ object Timestamp {
    * FOR TESTING ONLY. Used to replace the clock with a fixed time.
    * @param now time value for "now" to use on this thread
    */
-  def setArtificialNow(now: Long) {
+  def setArtificialNow(now: Long): Unit = {
     if(now == 0) {
       artificialNow.set(null)
     } else {
