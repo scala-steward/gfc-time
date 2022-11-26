@@ -2,9 +2,9 @@ name := "gfc-time"
 
 organization := "org.gfccollective"
 
-scalaVersion := "2.12.15"
+scalaVersion := "2.12.17"
 
-crossScalaVersions := Seq(scalaVersion.value, "2.13.8", "3.1.3")
+crossScalaVersions := Seq(scalaVersion.value, "2.13.10", "3.1.3")
 
 scalacOptions += "-target:jvm-1.8"
 
@@ -20,7 +20,7 @@ scalacOptions ++= {
 javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
 
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "3.2.12" % Test
+  "org.scalatest" %% "scalatest" % "3.2.14" % Test
 )
 
 publishMavenStyle := true
